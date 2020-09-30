@@ -1,0 +1,39 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list__item {
+  padding: 0 0 25px 23px;
+  border-left: 2px solid #e4e7ed;
+}
+
+.list__item:last-child {
+  padding-bottom: 0;
+  border-left: none;
+}
+
+.list__text {
+  margin: 0;
+  color: #303133;
+  padding-bottom: 23px;
+  position: relative;
+  line-height: 7px;
+}
+
+.list__text::before {
+  content: "";
+  display: inline-block;
+  background: #e4e7ed;
+  border: 1px solid #e4e7ed;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: -30px;
+}
+
+.list__date {
+  color: #9093b3;
+}
