@@ -1,12 +1,11 @@
 .list {
   list-style: none;
-  padding: 0;
   margin: 0;
 }
 
 .list__item {
-  padding: 0 0 25px 23px;
-  border-left: 2px solid #e4e7ed;
+  padding-bottom: 25px;
+  position: relative;
 }
 
 .list__item:last-child {
@@ -17,14 +16,17 @@
 .list__text {
   margin: 0;
   color: #303133;
-  padding-bottom: 23px;
-  position: relative;
-  line-height: 7px;
+  padding-bottom: 16px;
 }
 
-.list__text::before {
+.list__decor {
+  position: absolute;
+  top: 6px;
+}
+
+.circle::after {
   content: "";
-  display: inline-block;
+  display: block;
   background: #e4e7ed;
   border: 1px solid #e4e7ed;
   border-radius: 50%;
@@ -32,6 +34,18 @@
   height: 12px;
   position: absolute;
   left: -30px;
+}
+
+.tail::before {
+  content: "";
+  display: block;
+  background: #e4e7ed;
+  border: 1px solid #e4e7ed;
+  width: 0.3px;
+  height: 65px;
+  position: absolute;
+  left: -24px;
+  top: 12px;
 }
 
 .list__date {
